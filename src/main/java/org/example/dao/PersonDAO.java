@@ -20,7 +20,7 @@ public class PersonDAO {
         this.sessionFactory = sessionFactory;
     }
 
-    @Transactional
+    @Transactional(readOnly = true)
     public List<Person> index() {
         Session session = sessionFactory.getCurrentSession();
 
