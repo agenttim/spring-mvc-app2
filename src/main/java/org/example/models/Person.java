@@ -106,6 +106,14 @@ public class Person {
         this.mood = mood;
     }
 
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
